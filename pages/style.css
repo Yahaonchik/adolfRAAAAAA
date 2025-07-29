@@ -811,3 +811,26 @@
     opacity: 0;
   }
 }
+
+/* SVG visibility controls */
+.frame1196-desktop-svg {
+  display: block;
+}
+
+.frame1196-mobile-svg {
+  display: none;
+  width: 162px !important;
+  height: 122px !important;
+  margin-top: 7px;
+}
+
+/* Mobile devices only - show mobile SVG, hide desktop SVG */
+@media(max-width: 768px) {
+  .frame1196-desktop-svg {
+    display: none;
+  }
+
+  .frame1196-mobile-svg {
+    display: block;
+  }
+}
