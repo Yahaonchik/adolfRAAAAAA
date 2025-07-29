@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import Head from 'next/head'
 
 import { useTranslations } from 'next-intl'
@@ -7,6 +7,11 @@ import Component1 from '../components/component1'
 
 const Frame1196 = (props) => {
   const translate = useTranslations()
+  const [openFaq, setOpenFaq] = useState(null)
+
+  const toggleFaq = (index) => {
+    setOpenFaq(openFaq === index ? null : index)
+  }
   return (
     <>
       <div className="frame1196-container10">
@@ -493,7 +498,7 @@ const Frame1196 = (props) => {
                 />
               </div>
               <span className="frame1196-text142">
-                Лучшие мастера с многолетним стажем 7-10 ��ет
+                Лучшие мас��ера с многолетним стажем 7-10 ��ет
               </span>
               <img
                 alt="Vector677574"
@@ -538,7 +543,7 @@ const Frame1196 = (props) => {
             />
             <div className="frame1196-frame9481">
               <span className="frame1196-text145">
-                Замена манжеты люка на стиральной машине LG
+                Замена манжеты люк�� на стиральной машине LG
               </span>
             </div>
           </div>
@@ -614,21 +619,56 @@ const Frame1196 = (props) => {
             ></span>
           </span>
         </div>
-        <img
-          alt="image"
-          src="/%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE-1500w.png"
-          className="frame1196-image6"
-        />
+        <div className="frame1196-image6">
+          <svg
+            className="frame1196-horizontal-line"
+            viewBox="0 0 293 82"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 73.9388C0 78.357 3.58172 81.9388 8 81.9388C12.4183 81.9388 16 78.357 16 73.9388C16 69.5205 12.4183 65.9388 8 65.9388C3.58172 65.9388 0 69.5205 0 73.9388ZM285 73.9388V75.4388H286.5V73.9388H285ZM277 8C277 12.4183 280.582 16 285 16C289.418 16 293 12.4183 293 8C293 3.58172 289.418 0 285 0C280.582 0 277 3.58172 277 8ZM8 73.9388V75.4388H11.4625V73.9388V72.4388H8V73.9388ZM18.3875 73.9388V75.4388H25.3125V73.9388L25.3125 72.4388H18.3875V73.9388ZM32.2375 73.9388V75.4388L39.1625 75.4388V73.9388V72.4388L32.2375 72.4388V73.9388ZM46.0875 73.9388V75.4388H53.0125V73.9388V72.4388H46.0875V73.9388ZM59.9375 73.9388V75.4388H66.8625V73.9388V72.4388H59.9375V73.9388ZM73.7875 73.9388V75.4388H80.7125V73.9388V72.4388H73.7875V73.9388ZM87.6375 73.9388V75.4388H94.5625V73.9388V72.4388H87.6375V73.9388ZM101.488 73.9388V75.4388H108.413V73.9388V72.4388H101.488V73.9388ZM115.338 73.9388V75.4388H122.263V73.9388V72.4388H115.338V73.9388ZM129.188 73.9388V75.4388H136.113V73.9388V72.4388H129.188V73.9388ZM143.038 73.9388V75.4388H149.963V73.9388V72.4388H143.038V73.9388ZM156.888 73.9388V75.4388H163.813V73.9388V72.4388H156.888V73.9388ZM170.738 73.9388V75.4388H177.663V73.9388V72.4388H170.738V73.9388ZM184.588 73.9388V75.4388H191.513V73.9388V72.4388H184.588V73.9388ZM198.438 73.9388V75.4388H205.363V73.9388V72.4388H198.438V73.9388ZM212.288 73.9388V75.4388H219.213V73.9388V72.4388H212.288V73.9388ZM226.138 73.9388V75.4388H233.063V73.9388V72.4388H226.138V73.9388ZM239.988 73.9388V75.4388H246.913V73.9388V72.4388H239.988V73.9388ZM253.838 73.9388V75.4388H260.763V73.9388V72.4388H253.838V73.9388ZM267.688 73.9388V75.4388L274.613 75.4388V73.9388V72.4388L267.688 72.4388V73.9388ZM281.538 73.9388V75.4388H285V73.9388V72.4388H281.538V73.9388ZM285 73.9388H286.5V70.6418H285L283.5 70.6418V73.9388H285ZM285 64.0479H286.5V57.4541H285L283.5 57.4541V64.0479L285 64.0479ZM285 50.8602H286.5V44.2663H285L283.5 44.2663V50.8602L285 50.8602ZM285 37.6724H286.5V31.0786H285H283.5V37.6724H285ZM285 24.4847H286.5V17.8908H285H283.5V24.4847H285ZM285 11.2969H286.5V8L285 8H283.5V11.2969H285Z" fill="url(#paint0_linear_horizontal1)"/>
+            <defs>
+              <linearGradient id="paint0_linear_horizontal1" x1="8.00001" y1="326" x2="354" y2="329.5" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#606060"/>
+                <stop offset="1" stopColor="#ED9E65"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
         <div className="frame1196-container29">
-          <div className="frame1196-container30"></div>
+          <div className="frame1196-container30">
+            <svg
+              className="frame1196-vertical-line"
+              viewBox="0 0 4 586"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M2 0.9375L0.5 0.9375L0.5 4.41728H2H3.5L3.5 0.9375L2 0.9375ZM2 11.3768H0.5L0.5 18.3364H2H3.5L3.5 11.3768H2ZM2 25.296H0.5L0.5 32.2555H2H3.5L3.5 25.296H2ZM2 39.2151H0.5L0.5 46.1747H2H3.5L3.5 39.2151H2ZM2 53.1342H0.5L0.5 60.0938H2H3.5L3.5 53.1342H2ZM2 67.0534H0.5L0.5 74.0129H2H3.5L3.5 67.0534H2ZM2 80.9725H0.5L0.5 87.932H2H3.5L3.5 80.9725H2ZM2 94.8916H0.5L0.5 101.851H2H3.5L3.5 94.8916H2ZM2 108.811H0.5L0.5 115.77H2H3.5L3.5 108.811H2ZM2 122.73H0.5L0.5 129.689H2H3.5L3.5 122.73H2ZM2 136.649H0.5L0.5 143.609H2H3.5L3.5 136.649H2ZM2 150.568H0.5L0.5 157.528H2H3.5L3.5 150.568H2ZM2 164.487H0.5L0.5 171.447H2H3.5L3.5 164.487H2ZM2 178.406H0.5L0.5 185.366H2H3.5L3.5 178.406H2ZM2 192.325H0.5L0.5 199.285H2H3.5L3.5 192.325H2ZM2 206.245H0.5L0.5 213.204H2H3.5L3.5 206.245H2ZM2 220.164H0.5L0.5 227.123H2H3.5L3.5 220.164H2ZM2 234.083H0.5L0.5 241.042H2H3.5L3.5 234.083H2ZM2 248.002H0.5L0.5 254.962H2H3.5L3.5 248.002H2ZM2 261.921H0.5L0.5 268.881H2H3.5L3.5 261.921H2ZM2 275.84H0.5L0.5 282.8H2H3.5L3.5 275.84H2ZM2 289.759H0.5L0.5 296.719H2H3.5L3.5 289.759H2ZM2 303.679H0.5L0.5 310.638H2H3.5L3.5 303.679H2ZM2 317.598H0.5L0.5 324.557H2H3.5L3.5 317.598H2ZM2 331.517H0.5L0.5 338.476H2H3.5L3.5 331.517H2ZM2 345.436H0.5L0.5 352.395H2H3.5L3.5 345.436H2ZM2 359.355H0.5L0.5 366.315H2H3.5L3.5 359.355H2ZM2 373.274H0.5L0.5 380.234H2H3.5L3.5 373.274H2ZM2 387.193H0.5L0.5 394.153H2H3.5L3.5 387.193H2ZM2 401.112H0.5L0.5 408.072H2H3.5L3.5 401.112H2ZM2 415.032H0.5L0.5 421.991H2H3.5L3.5 415.032H2ZM2 428.951H0.5L0.5 435.91H2H3.5L3.5 428.951H2ZM2 442.87H0.5L0.5 449.829H2H3.5L3.5 442.87H2ZM2 456.789H0.5L0.5 463.749H2H3.5L3.5 456.789H2ZM2 470.708H0.5L0.5 477.668H2H3.5L3.5 470.708H2ZM2 484.627H0.5L0.5 491.587H2H3.5L3.5 484.627H2ZM2 498.546H0.5L0.5 505.506H2H3.5L3.5 498.546H2ZM2 512.465H0.5L0.5 519.425H2H3.5L3.5 512.465H2ZM2 526.385H0.5L0.5 533.344H2H3.5L3.5 526.385H2ZM2 540.304H0.5L0.5 547.263H2H3.5L3.5 540.304H2ZM2 554.223H0.5L0.5 561.182H2H3.5L3.5 554.223H2ZM2 568.142H0.5L0.5 575.101H2H3.5L3.5 568.142H2ZM2 582.061H0.5L0.5 585.541H2H3.5L3.5 582.061H2Z" fill="url(#paint0_linear_vertical)"/>
+              <defs>
+                <linearGradient id="paint0_linear_vertical" x1="2.00001" y1="253" x2="348" y2="256.5" gradientUnits="userSpaceOnUse">
+                  <stop stopColor="#606060"/>
+                  <stop offset="1" stopColor="#ED9E65"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
           <div className="frame1196-container31">
-            <div className="frame1196-container32">
+            <div
+              className="frame1196-container32"
+              onClick={() => toggleFaq(0)}
+              style={{ cursor: 'pointer', justifyContent: 'flex-start' }}
+            >
               <div className="frame1196-container33">
                 <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
                   className="frame1196-icon10"
+                  style={{
+                    transform: openFaq === 0 ? 'rotate(45deg)' : 'rotate(0deg)',
+                    transition: 'transform 0.3s ease',
+                    color: '#ED9E65'
+                  }}
                 >
                   <path
                     d="M12 5v14m-7-7h14"
@@ -640,7 +680,7 @@ const Frame1196 = (props) => {
                   ></path>
                 </svg>
               </div>
-              <span className="frame1196-text155">
+              <span className="frame1196-text155" style={{ textAlign: 'left' }}>
                 <span
                   dangerouslySetInnerHTML={{
                     __html: translate.raw('text_L36BuE'),
@@ -648,7 +688,21 @@ const Frame1196 = (props) => {
                 ></span>
               </span>
             </div>
-            <span className="frame1196-text156">
+            <span
+              className="frame1196-text156"
+              style={{
+                display: 'block',
+                maxHeight: openFaq === 0 ? '200px' : '0px',
+                overflow: 'hidden',
+                opacity: openFaq === 0 ? 1 : 0,
+                transition: 'all 0.3s ease',
+                paddingTop: openFaq === 0 ? '10px' : '0px',
+                width: '100%',
+                wordWrap: 'break-word',
+                textAlign: 'left',
+                lineHeight: '1.4'
+              }}
+            >
               <span
                 dangerouslySetInnerHTML={{
                   __html: translate.raw('text_s3SMkH'),
@@ -657,13 +711,22 @@ const Frame1196 = (props) => {
             </span>
           </div>
           <div className="frame1196-container34">
-            <div className="frame1196-container35">
+            <div
+              className="frame1196-container35"
+              onClick={() => toggleFaq(1)}
+              style={{ cursor: 'pointer', justifyContent: 'flex-start' }}
+            >
               <div className="frame1196-container36">
                 <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
                   className="frame1196-icon12"
+                  style={{
+                    transform: openFaq === 1 ? 'rotate(45deg)' : 'rotate(0deg)',
+                    transition: 'transform 0.3s ease',
+                    color: '#ED9E65'
+                  }}
                 >
                   <path
                     d="M12 5v14m-7-7h14"
@@ -675,7 +738,7 @@ const Frame1196 = (props) => {
                   ></path>
                 </svg>
               </div>
-              <span className="frame1196-text157">
+              <span className="frame1196-text157" style={{ textAlign: 'left' }}>
                 <span
                   dangerouslySetInnerHTML={{
                     __html: translate.raw('text_FqAHZv'),
@@ -683,7 +746,21 @@ const Frame1196 = (props) => {
                 ></span>
               </span>
             </div>
-            <span className="frame1196-text158">
+            <span
+              className="frame1196-text158"
+              style={{
+                display: 'block',
+                maxHeight: openFaq === 1 ? '200px' : '0px',
+                overflow: 'hidden',
+                opacity: openFaq === 1 ? 1 : 0,
+                transition: 'all 0.3s ease',
+                paddingTop: openFaq === 1 ? '10px' : '0px',
+                width: '100%',
+                wordWrap: 'break-word',
+                textAlign: 'left',
+                lineHeight: '1.4'
+              }}
+            >
               <span
                 dangerouslySetInnerHTML={{
                   __html: translate.raw('text_DJtAlR'),
@@ -692,13 +769,22 @@ const Frame1196 = (props) => {
             </span>
           </div>
           <div className="frame1196-container37">
-            <div className="frame1196-container38">
+            <div
+              className="frame1196-container38"
+              onClick={() => toggleFaq(2)}
+              style={{ cursor: 'pointer', justifyContent: 'flex-start' }}
+            >
               <div className="frame1196-container39">
                 <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
                   className="frame1196-icon14"
+                  style={{
+                    transform: openFaq === 2 ? 'rotate(45deg)' : 'rotate(0deg)',
+                    transition: 'transform 0.3s ease',
+                    color: '#ED9E65'
+                  }}
                 >
                   <path
                     d="M12 5v14m-7-7h14"
@@ -710,7 +796,7 @@ const Frame1196 = (props) => {
                   ></path>
                 </svg>
               </div>
-              <span className="frame1196-text159">
+              <span className="frame1196-text159" style={{ textAlign: 'left' }}>
                 <span
                   dangerouslySetInnerHTML={{
                     __html: translate.raw('text_R2dfrR'),
@@ -718,7 +804,21 @@ const Frame1196 = (props) => {
                 ></span>
               </span>
             </div>
-            <span className="frame1196-text160">
+            <span
+              className="frame1196-text160"
+              style={{
+                display: 'block',
+                maxHeight: openFaq === 2 ? '200px' : '0px',
+                overflow: 'hidden',
+                opacity: openFaq === 2 ? 1 : 0,
+                transition: 'all 0.3s ease',
+                paddingTop: openFaq === 2 ? '10px' : '0px',
+                width: '100%',
+                wordWrap: 'break-word',
+                textAlign: 'left',
+                lineHeight: '1.4'
+              }}
+            >
               <span
                 dangerouslySetInnerHTML={{
                   __html: translate.raw('text_cJhNjr'),
@@ -727,13 +827,22 @@ const Frame1196 = (props) => {
             </span>
           </div>
           <div className="frame1196-container40">
-            <div className="frame1196-container41">
+            <div
+              className="frame1196-container41"
+              onClick={() => toggleFaq(3)}
+              style={{ cursor: 'pointer', justifyContent: 'flex-start' }}
+            >
               <div className="frame1196-container42">
                 <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
                   className="frame1196-icon16"
+                  style={{
+                    transform: openFaq === 3 ? 'rotate(45deg)' : 'rotate(0deg)',
+                    transition: 'transform 0.3s ease',
+                    color: '#ED9E65'
+                  }}
                 >
                   <path
                     d="M12 5v14m-7-7h14"
@@ -745,7 +854,7 @@ const Frame1196 = (props) => {
                   ></path>
                 </svg>
               </div>
-              <span className="frame1196-text161">
+              <span className="frame1196-text161" style={{ textAlign: 'left' }}>
                 <span
                   dangerouslySetInnerHTML={{
                     __html: translate.raw('text_df7kbX'),
@@ -753,7 +862,21 @@ const Frame1196 = (props) => {
                 ></span>
               </span>
             </div>
-            <span className="frame1196-text162">
+            <span
+              className="frame1196-text162"
+              style={{
+                display: 'block',
+                maxHeight: openFaq === 3 ? '200px' : '0px',
+                overflow: 'hidden',
+                opacity: openFaq === 3 ? 1 : 0,
+                transition: 'all 0.3s ease',
+                paddingTop: openFaq === 3 ? '10px' : '0px',
+                width: '100%',
+                wordWrap: 'break-word',
+                textAlign: 'left',
+                lineHeight: '1.4'
+              }}
+            >
               <span
                 dangerouslySetInnerHTML={{
                   __html: translate.raw('text_ZFeooW'),
@@ -762,13 +885,22 @@ const Frame1196 = (props) => {
             </span>
           </div>
           <div className="frame1196-container43">
-            <div className="frame1196-container44">
+            <div
+              className="frame1196-container44"
+              onClick={() => toggleFaq(4)}
+              style={{ cursor: 'pointer', justifyContent: 'flex-start' }}
+            >
               <div className="frame1196-container45">
                 <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
                   className="frame1196-icon18"
+                  style={{
+                    transform: openFaq === 4 ? 'rotate(45deg)' : 'rotate(0deg)',
+                    transition: 'transform 0.3s ease',
+                    color: '#ED9E65'
+                  }}
                 >
                   <path
                     d="M12 5v14m-7-7h14"
@@ -780,7 +912,7 @@ const Frame1196 = (props) => {
                   ></path>
                 </svg>
               </div>
-              <span className="frame1196-text163">
+              <span className="frame1196-text163" style={{ textAlign: 'left' }}>
                 <span
                   dangerouslySetInnerHTML={{
                     __html: translate.raw('text_tCxv3Q'),
@@ -788,7 +920,21 @@ const Frame1196 = (props) => {
                 ></span>
               </span>
             </div>
-            <span className="frame1196-text164">
+            <span
+              className="frame1196-text164"
+              style={{
+                display: 'block',
+                maxHeight: openFaq === 4 ? '200px' : '0px',
+                overflow: 'hidden',
+                opacity: openFaq === 4 ? 1 : 0,
+                transition: 'all 0.3s ease',
+                paddingTop: openFaq === 4 ? '10px' : '0px',
+                width: '100%',
+                wordWrap: 'break-word',
+                textAlign: 'left',
+                lineHeight: '1.4'
+              }}
+            >
               <span
                 dangerouslySetInnerHTML={{
                   __html: translate.raw('text_kUAGnL'),
@@ -797,11 +943,22 @@ const Frame1196 = (props) => {
             </span>
           </div>
         </div>
-        <img
-          alt="image"
-          src="/group%20396-1500w.png"
-          className="frame1196-image7"
-        />
+        <div className="frame1196-image7">
+          <svg
+            className="frame1196-horizontal-line2"
+            viewBox="0 0 362 176"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 8.53906C0 12.9573 3.58172 16.5391 8 16.5391C12.4183 16.5391 16 12.9573 16 8.53906C16 4.12078 12.4183 0.539062 8 0.539062C3.58172 0.539063 0 4.12078 0 8.53906ZM354 8.53906H355.5V7.03906H354V8.53906ZM346 167.997C346 172.415 349.582 175.997 354 175.997C358.418 175.997 362 172.415 362 167.997C362 163.579 358.418 159.997 354 159.997C349.582 159.997 346 163.579 346 167.997ZM8 8.53906V10.0391H11.46V8.53906V7.03906L8 7.03906V8.53906ZM18.38 8.53906V10.0391L25.3 10.0391V8.53906V7.03906L18.38 7.03906V8.53906ZM32.22 8.53906V10.0391L39.14 10.0391V8.53906V7.03906L32.22 7.03906V8.53906ZM46.06 8.53906V10.0391L52.98 10.0391V8.53906V7.03906L46.06 7.03906V8.53906ZM59.9 8.53906V10.0391L66.82 10.0391V8.53906V7.03906L59.9 7.03906V8.53906ZM73.74 8.53906V10.0391L80.66 10.0391V8.53906V7.03906L73.74 7.03906V8.53906ZM87.58 8.53906V10.0391L94.5 10.0391V8.53906V7.03906L87.58 7.03906V8.53906ZM101.42 8.53906V10.0391L108.34 10.0391V8.53906V7.03906L101.42 7.03906V8.53906ZM115.26 8.53906V10.0391L122.18 10.0391V8.53906V7.03906L115.26 7.03906V8.53906ZM129.1 8.53906V10.0391L136.02 10.0391V8.53906V7.03906L129.1 7.03906V8.53906ZM142.94 8.53906V10.0391L149.86 10.0391V8.53906V7.03906L142.94 7.03906V8.53906ZM156.78 8.53906V10.0391L163.7 10.0391V8.53906V7.03906L156.78 7.03906V8.53906ZM170.62 8.53906V10.0391L177.54 10.0391V8.53906V7.03906L170.62 7.03906V8.53906ZM184.46 8.53906V10.0391L191.38 10.0391V8.53906V7.03906L184.46 7.03906V8.53906ZM198.3 8.53906V10.0391L205.22 10.0391V8.53906V7.03906L198.3 7.03906V8.53906ZM212.14 8.53906V10.0391L219.06 10.0391V8.53906V7.03906L212.14 7.03906V8.53906ZM225.98 8.53906V10.0391L232.9 10.0391V8.53906V7.03906L225.98 7.03906V8.53906ZM239.82 8.53906V10.0391L246.74 10.0391V8.53906V7.03906L239.82 7.03906V8.53906ZM253.66 8.53906V10.0391L260.58 10.0391V8.53906V7.03906L253.66 7.03906V8.53906ZM267.5 8.53906V10.0391L274.42 10.0391V8.53906V7.03906L267.5 7.03906V8.53906ZM281.34 8.53906V10.0391L288.26 10.0391V8.53906V7.03906L281.34 7.03906V8.53906ZM295.18 8.53906V10.0391H302.1V8.53906V7.03906L295.18 7.03906V8.53906ZM309.02 8.53906V10.0391H315.94V8.53906V7.03906L309.02 7.03906V8.53906ZM322.86 8.53906V10.0391L329.78 10.0391V8.53906V7.03906L322.86 7.03906V8.53906ZM336.7 8.53906V10.0391L343.62 10.0391V8.53906V7.03906L336.7 7.03906V8.53906ZM350.54 8.53906V10.0391L354 10.0391V8.53906V7.03906L350.54 7.03906V8.53906ZM354 8.53906H352.5V12.1631H354H355.5V8.53906H354ZM354 19.4112H352.5V26.6593H354H355.5V19.4112H354ZM354 33.9074H352.5V41.1554H354H355.5V33.9074H354ZM354 48.4035H352.5V55.6516H354H355.5V48.4035H354ZM354 62.8997H352.5V70.1478H354H355.5V62.8997H354ZM354 77.3959H352.5V84.644H354H355.5V77.3959H354ZM354 91.892H352.5V99.1401H354H355.5V91.892H354ZM354 106.388H352.5V113.636H354H355.5V106.388H354ZM354 120.884H352.5L352.5 128.132H354H355.5L355.5 120.884H354ZM354 135.381H352.5V142.629H354H355.5V135.381H354ZM354 149.877H352.5V157.125H354H355.5V149.877H354ZM354 164.373H352.5V167.997H354H355.5V164.373H354Z" fill="url(#paint0_linear_horizontal2)"/>
+            <defs>
+              <linearGradient id="paint0_linear_horizontal2" x1="8.00001" y1="-324" x2="354" y2="-320.5" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#606060"/>
+                <stop offset="1" stopColor="#ED9E65"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
         <div className="frame1196-frame1068">
           <span className="frame1196-text165">Проконсультироваться</span>
         </div>
@@ -816,8 +973,8 @@ const Frame1196 = (props) => {
             отжимать, стирать и радовать стабильностью. Но на практике даже
             самая н��дёжная техника со временем требует внимания. Механические
             детали изнашиваются, электроника даёт сбои, а б��товая нагрузка
-            делает своё дело. Вот почему ремонт стиральных машин в Одессе — это
-            не просто разовая услуга, а реальная необходимость для большинства
+            делает своё дело. Вот по��ему ремонт стиральных машин в Одессе — это
+            не просто разовая услуга, �� реальная не��бходимос��ь для большинства
             владельцев. Важно доверить ремонт проверенным специалистам, а не
             случайному мастеру.
           </span>
@@ -829,9 +986,9 @@ const Frame1196 = (props) => {
             у специалистов европейских брендов, прошли сертификацию, посещали
             техкурсы и накопили опыт работы с техникой любых поколений. Сегодня
             мы предлагаем ремонт стиральных машин в Одессе с гарантией,
-            использованием оригинальных зап��астей и вниманием к каждой детали. В
+            использованием оригинальных зап��астей и вниман��ем к каждой детали. В
             нашем распоряжении — профессионально оснащённая мастерс��ая, склад
-            комплектующих и выездной сервис. Мы находим даже редкие детали и
+            комплектующ��х и выез��ной сервис. Мы находим даже редкие детали и
             точно знаем, как продлить жизнь вашей технике.
           </span>
           <br />
@@ -855,12 +1012,12 @@ const Frame1196 = (props) => {
           <br />
           <br />
           <span className="frame1196-text188">
-            Используем современное оборудование и точную диагностику.
+            Используем совре��енное оборудование и точную диагностику.
           </span>
           <br />
           <br />
           <span className="frame1196-text191">
-            Работаем как с типовыми, так и со сложными неисправностями.
+            Работаем как с тип��выми, так и со сложными неисправностями.
           </span>
           <br />
           <br />
@@ -886,7 +1043,7 @@ const Frame1196 = (props) => {
           </span>
           <br />
           <span>
-            Не запускается стирка — проверяем модуль управления или кнопку
+            Не запускае��ся стирка — проверяем модуль управления или кнопку
             питания.
           </span>
           <br />
@@ -911,7 +1068,7 @@ const Frame1196 = (props) => {
             Мы обслуживаем бренды: LG, Samsung, Bosch, Electrolux, Whirlpool,
             Indesit, Zanussi, Gorenje, AEG, Miele и другие. Работаем не только
             по Одессе, но и в пригородах. Возможен выезд мастера на д��м либо
-            доставка техники в мастерскую.
+            доставка техники в ��астерскую.
           </span>
           <br />
           <span>Сервисная мастерская по ремонту стиральных машин</span>
@@ -926,8 +1083,8 @@ const Frame1196 = (props) => {
           <span>
             Выполняем замену амортизаторов, подшипников, сливных насосов,
             управляющих модулей, датчиков, ТЭНов. Также восстанавливаем
-            герметичн��сть, меняем люки, устраняем вибрации и посторонние шумы.
-            Проводим профилактику и глубокую чистку б��рабана и бака.
+            герметичн��сть, меняем люки, устраняем вибрации и по��торонние шумы.
+            Проводим профилактику и глубокую чистку ����рабана и бака.
           </span>
           <br />
           <span>
@@ -942,7 +1099,7 @@ const Frame1196 = (props) => {
           <br />
           <span>
             Ниже на сайте — карта проезда к нашей мастерской, а также телефоны
-            службы поддержки. Звоните для записи, консультации или если заметили
+            службы поддержки. Звоните для записи, консу��ьтации или если заметили
             сбои в работе вашей стиральной машины. Мы всё объясним, рассчитаем
             стоимость и поможем.
           </span>
