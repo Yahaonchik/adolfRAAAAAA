@@ -631,3 +631,183 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Mobile washing machine adjustments */
+@media(max-width: 768px) {
+  #washer {
+    width: 112px;
+    height: 112px;
+  }
+
+  .frame1196-image1 {
+    top: -98px !important;
+    left: 56px !important;
+    width: 112px !important;
+    height: 112px !important;
+  }
+
+  #door {
+    height: 112px;
+    width: 112px;
+  }
+
+  #door #inner-door {
+    height: 95px;
+    width: 95px;
+  }
+
+  .page {
+    height: 85px;
+    width: 85px;
+  }
+
+  .handle {
+    right: 4px;
+    width: 8px;
+    height: 23px;
+  }
+}
+
+/* Washing Machine Styles */
+#washer {
+    margin: 0;
+    width: 177px;
+    height: 177px;
+    text-align: center;
+}
+
+/* Outer circle - 177x177 */
+#door{
+	background: #FCFCF3;
+	border-radius: 50%;
+	height: 177px;
+	width: 177px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Middle circle - 150x150 */
+#door #inner-door{
+   background: #A2ABA4;
+   border-radius: 50%;
+   height: 150px;
+   width: 150px;
+   position: relative;
+   border: 1px solid #000;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/* Inner circle - 135x135 (where water will be) */
+.page {
+  height: 135px;
+  width: 135px;
+  position: relative;
+  background: #A2ABA4;
+  border-radius: 50%;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+/* Handle design */
+.handle {
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 36px;
+  background: #ED9E65;
+  border: 1px solid #000;
+  border-radius: 12px;
+  z-index: 10;
+}
+
+.water {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  background: #32bafa;
+  transform: translate(0, 50%);
+}
+
+.water-inner {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.water-wave {
+  width: 200%;
+  position: absolute;
+  bottom: 100%;
+}
+
+.water-wave-back {
+  right: 0;
+  fill: #aaa;
+  animation: wave-back 1.9s infinite linear;
+}
+
+.water-wave-front {
+  left: 0;
+  fill: #32bafa;
+  margin-bottom: -1px;
+  animation: wave-front 1.2s infinite linear;
+}
+
+@keyframes wave-front {
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes wave-back {
+  100% {
+    transform: translate(50%, 0);
+  }
+}
+
+.bubble {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: bubble-rise 2s infinite linear;
+}
+
+.bubble1 {
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.bubble2 {
+  left: 50%;
+  animation-delay: 0.7s;
+}
+
+.bubble3 {
+  left: 80%;
+  animation-delay: 1.4s;
+}
+
+@keyframes bubble-rise {
+  from {
+    bottom: 0;
+    opacity: 1;
+  }
+  to {
+    bottom: 100%;
+    opacity: 0;
+  }
+}
