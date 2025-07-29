@@ -834,3 +834,21 @@
     display: block;
   }
 }
+
+/* New mobile line SVG - только для мобильных */
+.frame1196-mobile-line {
+  display: none;
+  width: 207px;
+  height: 122px;
+  max-width: 207px;
+}
+
+@media(max-width: 768px) {
+  .frame1196-horizontal-line2 {
+    display: none;
+  }
+
+  .frame1196-mobile-line {
+    display: block;
+  }
+}
