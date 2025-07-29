@@ -4,6 +4,10 @@ import Head from 'next/head'
 import { useTranslations } from 'next-intl'
 
 import Component1 from '../components/component1'
+import EnhancedSimpleRive from '../components/EnhancedSimpleRive'
+import MobilePriceTable from '../components/MobilePriceTable'
+import FAQSection from '../components/FAQSection'
+import ConnectionPath from '../components/ConnectionPath'
 
 const Frame1196 = (props) => {
   const translate = useTranslations()
@@ -332,7 +336,7 @@ const Frame1196 = (props) => {
           <span className="frame1196-text125">РемСтирМаш</span>
           <span>
             {' '}
-            мы заботимся о надёжной работе вашей техники во вс��х у��олках Одессы.
+            мы заботимся о надёжной работе вашей техники во всех уголках Одессы.
           </span>
           <br />
           <span>
@@ -399,11 +403,8 @@ const Frame1196 = (props) => {
           ></span>
         </span>
         <div className="frame1196-container25">
-          <img
-            alt="image38230077647"
-            src="/external/image38230077647-xcod-400h.png"
-            className="frame1196-image3823007"
-          />
+          <EnhancedSimpleRive />
+          <MobilePriceTable />
         </div>
         <div className="frame1196-frame928">
           <img
@@ -498,7 +499,7 @@ const Frame1196 = (props) => {
                 />
               </div>
               <span className="frame1196-text142">
-                Лучшие мас��ера с многолетним стажем 7-10 ��ет
+                Лучшие мас��ера с многоле��ни�� стажем 7-10 ��ет
               </span>
               <img
                 alt="Vector677574"
@@ -692,9 +693,9 @@ const Frame1196 = (props) => {
                     d="M12 5v14m-7-7h14"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></path>
                 </svg>
               </div>
@@ -751,9 +752,9 @@ const Frame1196 = (props) => {
                     d="M12 5v14m-7-7h14"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></path>
                 </svg>
               </div>
@@ -810,9 +811,9 @@ const Frame1196 = (props) => {
                     d="M12 5v14m-7-7h14"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></path>
                 </svg>
               </div>
@@ -869,9 +870,9 @@ const Frame1196 = (props) => {
                     d="M12 5v14m-7-7h14"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></path>
                 </svg>
               </div>
@@ -928,9 +929,9 @@ const Frame1196 = (props) => {
                     d="M12 5v14m-7-7h14"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></path>
                 </svg>
               </div>
@@ -1005,7 +1006,7 @@ const Frame1196 = (props) => {
         </div>
         <span className="frame1196-text166">
           <span className="frame1196-text167">
-            РЕМОНТ СТИРАЛЬ��ЫХ МАШИН В СЕРВИСНОМ ЦЕНТРЕ РЕМСТИРМАШ В ОДЕССЕ
+            РЕМОНТ СТИРАЛЬНЫХ МАШИН В СЕРВИСНОМ ЦЕНТРЕ РЕМСТИРМАШ В ОДЕССЕ
           </span>
           <br />
           <br />
@@ -1023,22 +1024,22 @@ const Frame1196 = (props) => {
           <br />
           <span className="frame1196-text173">
             Под брендом РемСтирМаш работает команда мастеров, каждый из которых
-            зан��мается ремонтом стиральных машин более десяти лет. Мы обучались
-            у специалистов европейских брендов, п��ошли сертификацию, посещали
+            занимается ремонтом стиральных машин более десяти лет. Мы обучались
+            у специалистов европейских брендов, прошли сертификацию, посещали
             техкурсы и накопили опыт работы с техникой любых поколений. Сегодня
             мы предлагаем ремонт стиральных машин в Одессе с гарантией,
-            использованием оригинальных зап��астей и вниман��ем к каждой детали. В
-            нашем распоряжении — профессионально оснащённая мастерс��ая, склад
-            комплектующ��х и выез��ной сервис. Мы находим даже редкие детали и
+            использованием оригинальных запчастей и вниманием к каждой детали. В
+            нашем распоряжении — профессионально оснащённая мастерская, склад
+            комплектующих и выездной сервис. Мы находим даже редкие детали и
             точно знаем, как продлить жизнь вашей технике.
           </span>
           <br />
           <br />
-          <span className="frame1196-text176">Почему выб��ра����т нас:</span>
+          <span className="frame1196-text176">Почему выбирают нас:</span>
           <br />
           <br />
           <span className="frame1196-text179">
-            На рынке ремонта бытовой техники с 2011 года.
+            На рын��е ремонта бытовой техники с 2011 года.
           </span>
           <br />
           <br />
@@ -1063,7 +1064,7 @@ const Frame1196 = (props) => {
           <br />
           <br />
           <span className="frame1196-text194">
-            Частые поломки стиральных машин
+            ��астые поломки стиральных машин
           </span>
           <br />
           <br />
@@ -1092,10 +1093,10 @@ const Frame1196 = (props) => {
             Течёт корпус — устраняем ����течки, заменяем шлан��и, манжеты, патрубки.
           </span>
           <br />
-          <span>Не греет воду — диагностика и замена ТЭНа.</span>
+          <span>Не греет в��ду — диагностика и замена ТЭНа.</span>
           <br />
           <span>
-            Ошибка на экране — расшифровываем код неисправности и устраняем
+            Ошибка на экране ��� расшифровываем код неисправности и устраняем
             причину.
           </span>
           <br />
@@ -1129,13 +1130,13 @@ const Frame1196 = (props) => {
           </span>
           <br />
           <span>
-            Каждый ремонт начинается с диагностики — мастер объясняет, в чём
-            проблема, и предла����ет решение. Только после согласования с клиентом
-            мы приступаем к работе.
+            Каждый ремонт начинается �� диагностики — мастер объясняет, в чём
+            пр��блема, и предла����ет решение. Только после согласования с клиентом
+            мы ��ри��тупаем к работе.
           </span>
           <br />
           <span>
-            Мы ценим доверие и работаем аккуратно — без спешки и халтуры.
+            Мы ценим доверие и работаем аккурат��о — без спешки и халтуры.
           </span>
           <br />
           <span>
@@ -1729,11 +1730,8 @@ const Frame1196 = (props) => {
           .frame1196-container25 {
             flex: 0 0 auto;
             display: flex;
-            align-items: flex-start;
-          }
-          .frame1196-image3823007 {
-            width: 796px;
-            height: 369px;
+            align-items: center;
+            justify-content: center;
           }
           .frame1196-frame928 {
             gap: 21px;

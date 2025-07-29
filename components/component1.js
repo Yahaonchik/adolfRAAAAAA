@@ -32,9 +32,9 @@ const Component1 = (props) => {
               d="M19 12H5m14 0l-4 4m4-4l-4-4"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></path>
           </svg>
         </div>
